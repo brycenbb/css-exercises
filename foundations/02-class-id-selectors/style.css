@@ -1,0 +1,21 @@
+.odds {
+    background-color: rgb(194, 60, 82);
+    font-family:'Verdana','DejaVu Sans', 'sans serif';
+}
+
+#unique1 {
+    color: rgb(16, 16, 122);
+    font-size: 36px;
+
+}
+
+.odds .two {
+    font-size: 24px;
+}
+
+#unique2 {
+    background-color: rgb(139, 228, 139);
+    font-size: 24px;
+    font-weight: bold;
+}
+
