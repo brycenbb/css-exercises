@@ -1,6 +1,6 @@
 .odds {
     background-color: rgb(194, 60, 82);
-    font-family:'Verdana','DejaVu Sans', 'sans serif';
+    font-family:Verdana,DejaVu Sans, sans-serif;
 }
 
 #unique1 {
@@ -9,7 +9,7 @@
 
 }
 
-.odds .two {
+.odds.two {
     font-size: 24px;
 }
 
