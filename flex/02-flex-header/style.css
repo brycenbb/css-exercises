@@ -14,6 +14,10 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  flex:1;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
 }
 
 a {
@@ -23,3 +27,60 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+/* Correct solution is under here
+Does not include the padding, margin, and gap
+set on ul. My solution is commented out under
+the correct solution. Lessons learned are
+that space between aligns the first item
+to the start of the flex direction and
+the last item to the end of it, removing
+the need to hard code it in. I also
+believe that setting ul to display flex
+allows its children to be laid out
+horizontally cause the default is row
+for flex direction, taking away the need
+to do that manually as well. */
+
+.header {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+/* .left-links {
+  display: flex;
+  align-items: center;
+  flex: auto;
+  justify-content: flex-start;
+}
+.right-links {
+  display: flex;
+  align-items: center;
+  flex: auto;
+  justify-content: flex-end;
+} */
+
+
+/* 
+.left-list {
+  display: flex;
+  gap: 12px;
+  margin-left: 5px;
+  flex: auto;
+} */
+
+/* .right-list {
+  display: flex;
+  gap: 12px;
+  margin-right: 5px;
+  flex: auto;
+  justify-content:flex-end;
+
+} */
