@@ -31,7 +31,7 @@ a {
 Does not include the padding, margin, and gap
 set on ul. My solution is commented out under
 the correct solution. Lessons learned are
-that space between aligns the first item
+that space-between aligns the first item
 to the start of the flex direction and
 the last item to the end of it, removing
 the need to hard code it in. I also
