@@ -7,14 +7,24 @@
   <link rel="stylesheet" href="style.css">
   <title>Modal</title>
 </head>
+<!-- Lessons learned: Buttons are inline block by default so i didnt need
+  to put them in a div to get them next to each other. I did do well to put the
+  middle content in their own div. Putting the header and the close button in the same
+  div is very inspired as it allows the body text to spill under the close button. In what
+  I did, it prevents the text from bleeding over as the button div makes the textbox smaller. 
+  Proud my intuition on this is getting better.-->
 <body>
   <div class="modal">
     <div class="icon">!</div>
-    <div class="header">Are you sure you want to do that?</div>
+    <div class="middle">
+      <div class="header">Are you sure you want to do that?</div>
+      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
+      <div class="answers">
+        <button class="continue">Continue</button>
+        <button class="cancel">Cancel</button>
+      </div>
+    </div>
     <div class="close-button">✖</div>
-    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-    <button class="continue">Continue</button>
-    <button class="cancel">Cancel</button>
   </div>
 </body>
 </html>
