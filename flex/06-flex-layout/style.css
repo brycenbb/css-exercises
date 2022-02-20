@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 body {
   height: 100vh;
   margin: 0;
@@ -24,4 +23,65 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/*  */
+/* Lessons learned: I positioned the header/footer by using
+space-between on the body while the solution uses flex:1 on the 
+content. Upon inspecting elements, the soltuion looks much cleaner. 
+Justify-content on the left/right links doesnt seem to do anything. 
+Potentially because the setting on header/footer? Will need to learn 
+more about it. Overall not bad. */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: #666;
+}
+
+.footer,
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  /* justify-content: center; */
+  gap: 16px;
+  margin: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* flex: 1; */
+}
+
+button {
+  padding: 8px 16px;
+}
+
+
+/* for preview ease of viewing */
+body {
+  background-color: white;
 }
