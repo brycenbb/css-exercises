@@ -26,3 +26,69 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/*  */
+/* Lessons learned: I overcomplicated the positioning of the sidebar items.
+  I was so focused on using flexbox that I forgot I could have simply added 
+  a bottom margin rather than using gap. It would have removed the need to
+  change the flex direction too. Silly oversight. Other than that, great job me.
+  Having the insight to do flex: 1 on the middle section to accomodate changing
+  browser sizes was good by me. Learning well. */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  align-items:center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  padding: 32px;
+  
+}
+
+.card {
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+}
